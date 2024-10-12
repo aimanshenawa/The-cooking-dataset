@@ -79,6 +79,7 @@ U: Yes
 {'object': 'spatula', 'location': 'drawer', 'cleanliness':'clean'}
 Was semantic extraction successful?
 """
+
 question2 = Given this conversation history, is it correct to assume that the user is about to pour soup for dinner?
 
 
