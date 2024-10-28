@@ -1,0 +1,888 @@
+phase_id,question_type,number_of_questions,question1,question2,answer_choices,expected_return_type,expected_answers_question1,expected_answers_question2,comments
+preparation,dictionary_return,1,Can you get me the utensil for stirring? ,N/A,N/A,dict,"{'object': 'spatula', 'cleanliness': 'clean', 'room' : 'kitchen', 'location': 'drawer'} 
+{'object': 'spoon', 'cleanliness': 'clean', 'room' : 'kitchen', 'location': 'drawer'}
+{'object': 'ladle', 'cleanliness': 'clean', 'room' : 'kitchen', 'location': 'drawer'}",N/A,N/A
+preparation,dictionary_return,1,How do I open this coconut?,N/A,N/A,dict,"{'object': 'coconut opener', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'hammer', 'room': 'storage room', 'location': 'cabinet'}
+{'object': 'screw driver', 'room': 'storage room', 'location': 'cabinet'}
+{'object': 'knife', 'room':'kitchen','location':'drawer'}
+{'object': 'knife', 'room':'kitchen','location':'cutlery drawer'}",N/A,N/A
+preparation,dictionary_return,1,"I can't open this metal can, fetch me something that will help",N/A,N/A,dict,"{'object': 'can opener', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'can opener', 'room': 'kitchen', 'location': 'cutlery drawer'}
+{'object': 'can opener', 'room': 'kitchen', 'location': 'cabinet'}",N/A,N/A
+preparation,dictionary_return,1,"The glass has dried up, can you put it away?",N/A,N/A,dict,"{'object': 'glass', 'room': 'kitchen', 'location': 'sink'}",N/A,N/A
+preparation,dictionary_return,1,Where do i get 'yolk'?,N/A,N/A,dict,"{'object': 'egg', 'room': 'kitchen', 'location': 'fridge'}
+{'object': 'eggs', 'room': 'kitchen', 'location': 'fridge'}
+{'object': 'egg', 'room': 'kitchen', 'location': 'refrigerator'}
+{'object': 'eggs', 'room': 'kitchen', 'location': 'refrigerator'}
+{'object': 'egg', 'room': 'kitchen', 'location': 'pantry'}
+{'object': 'eggs', 'room': 'kitchen', 'location': 'pantry'}",N/A,N/A
+preparation,dictionary_return,1,What should i use to seperate the yolk from the egg white? I don't want to get my hands dirty,N/A,N/A,dict,"{'object': 'Egg separator', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'funnel', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'spoon', 'room': 'kitchen', 'location': 'drawer'}",N/A,N/A
+preparation,dictionary_return,1,"I want to start grilling, but this barbecue charcoal bag just won't open, fetch me a tool that would help!",N/A,N/A,dict,"{'object': 'scissors', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'knife', 'room': 'kitchen', 'location': 'drawer'}",N/A,N/A
+preparation,dictionary_return,1,"I need to prepare a sifter, what is that?",N/A,N/A,dict,"{'object': 'Sieve', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'Sieve', 'room': 'kitchen', 'location': 'cabinet'} ",N/A,N/A
+preparation,dictionary_return,1,I need something to put this lettuce in after washing it,N/A,N/A,dict,"{'object': 'strainer', 'room': 'kitchen', 'location': 'cabinet'}
+{'object': 'strainer', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'bowl', 'room': 'kitchen', 'location': 'cabinet'}",N/A,N/A
+preparation,dictionary_return,1,"I just picked up vegetables from the market, what is the first thing I should do to them before cooking?",N/A,N/A,dict,"{'object': 'vegetables', 'room': 'kitchen', 'location': 'sink', 'action': 'wash them'}",N/A,N/A
+preparation,yes_no_return,1,"If I am going to bake, do i need measuring cups?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+preparation,yes_no_return,1,Should I remove the outer leaves of the lettuce?,N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+preparation,yes_no_return,1,"Ugh, I forgot to take out the chicken. Could I use the microwave to defrost instead?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+preparation,yes_no_return,1,Should I peel the potatoes before cutting them if I am making mashed potatoes?,N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+preparation,yes_no_return,1,"My kid wants to help out, is it fine for her to wash all the vegetables?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+preparation,yes_no_return,1,"I got the vegetables from the fridge, should I cut them now?",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+preparation,yes_no_return,1,Is it safe to heat a tupperware with an aluminium foil on top in the microwave?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+preparation,yes_no_return,1,Can I wash the raw chicken in the sink to make it cleaner?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+preparation,yes_no_return,1,"My three year old wants to help out, should I let him cut the vegetables using a sharp knife?",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+preparation,yes_no_return,1,"This tupperware doesn't have a microwave-safe marking on it, can I still use it in the microwave?",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+preparation,likelihood_return,1,There's a rotten smell coming from the fruit basket. What is the likelihood of a spoiled fruit?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+preparation,likelihood_return,1,Oh no! I forgot to refrigerate the watermelon that I left on the counter overnight. What's the likelihood of it being warm?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+preparation,likelihood_return,1,"I found a wet sponge and wet plates in the sink, what is the likelihood of the plates being clean?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+preparation,likelihood_return,1,"I am watching my mom preparing to make an apple pie. She's about to take out the apples from the fridge, what's the likelihood of her rinsing them with water now?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+preparation,likelihood_return,1,When i squeeze this lemon it is very soft and has some odd color to it. Could it be that it has gone bad?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+preparation,likelihood_return,1,I left the milk out on the counter overnight. What's the likelihood of it being fresh?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+preparation,likelihood_return,1,"I forgot to take out the chicken before starting, how likely is it the frozen chicken will thaw in 10 minutes?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+preparation,likelihood_return,1,I just bought a loaf of bread two days ago. What's the likelihood of it being stale already?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+preparation,likelihood_return,1,I spilled oil on the kitchen floor. What's the likelihood of it not being slippery?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very unlikely,N/A,N/A
+preparation,likelihood_return,1,"I put my coffee mug in the sink yesterday after finishing my coffee, if I live alone, might I find it clean the next morning?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very unlikely,N/A,N/A
+preparation,mcq,1,"My recipe calls for half a dozed of eggs do I then prepare
+A. 4 eggs
+B. 5 eggs
+C. 6 eggs
+D. 7 eggs",N/A,"[""A"", ""B"",""C"", ""D""]",str,C,N/A,N/A
+preparation,mcq,1,"I need milk to my cereal, do I use:
+A. The one month expired opened milk carton in the fridge
+B. The unopened, unexpired milk carton in the fridge
+C. The milk carton that has been left on the counter for two days
+D. the milk carton that is placed upside down in the sink",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+preparation,mcq,1,"I need to prepare a utensil for stirring my wok, should I grab the
+A. wooden spatula
+B. metal spoon
+C. plastic fork
+D. plastic bottle ",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+preparation,mcq,1,"Help me open this coconut, to punch a hole it in order to drain the coconut water I should use:
+A. My hand to punch it open
+B. My finger to make a hole
+C. A clean screw driver and a hammer
+D. poke it with a sharp knife while my kid is holding the coconut",N/A,"[""A"", ""B"",""C"", ""D""]",str,C,N/A,N/A
+preparation,mcq,1,"I will need something to open this metal can, can I use
+A. twist the top of the jar
+B. use my thumbs to force it open 
+C. puncture it with a sharp edged knife
+D. can opener ",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+preparation,mcq,1,"Before starting to cook a meal I cleaned up two plates, because all of my other plates are in the dish washer, yet to be cleaned. Should I
+A. Put the two plates in the dish washer
+B. Store them away for when needed, in the cabin
+C. throw the plates in the trash because they are used
+D. keep them on the counter where I will be working",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+preparation,mcq,1,"I want to make scrambled eggs with tomatoes, which of these items do I need:
+A. pot
+B. pan
+C. strainer
+D. colander",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+preparation,mcq,1,"It is quite sunny and I feel like having a barbecue. Now to start a fire in my grill I need
+A. Charcoal bag
+B. 1 liter of petrol
+C. solidified gas for the burner
+D. compost",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+preparation,mcq,1,"I'm going to make a pizza, to spread out the dough efficiently what might I use:
+A. spoon
+B. fork 
+C. hands
+D. rolling pin",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+preparation,mcq,1,"I am preparing food and am about to start, I have a chicken that was frozen but I put it in the fridge yesterday. What is the first thing I should do to start my preparations:
+A. rinse the vegetables I am going to cut 
+B. take out the chicken from the fridge
+C. turn on the oven and put in the chicken immediately 
+D. mash meat to make burgers",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+preparation,evaluation_of_conversation,2,"U: Hand me the tool for stirring  
+R: Might it be a spatula you are talking about? Used for example for mixing food
+U: Yes!
+R: Is it clean?
+U: Yes
+{'object': 'spatula', 'location': 'drawer', 'cleanliness':'clean'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user is about to pour soup for dinner?",N/A,str,yes,no,N/A
+preparation,evaluation_of_conversation,2,"U: How do I open this coconut  
+R: Is the coconut drained or still full of liquid?
+U: I haven't drained it yet
+R: Do you have access to a hammer and screw driver?
+U: yes, they are in my toolbag in the closet
+{'object': 'toolbag', 'location': 'closet'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user is about to cut open a pineapple?",N/A,str,yes,no,N/A
+preparation,evaluation_of_conversation,2,"U: This jar is hard to open  
+R: What type of jar is it, metal or glass?
+U: metal
+{'object': 'can opener', 'location': 'drawer'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user wants to open a canned product?",N/A,str,yes,yes,N/A
+preparation,evaluation_of_conversation,2,"U: the dished have dried up, time to put them away  
+R: What type of dishes were they?
+U: cutlery
+ {'object': 'cuttlery', 'location': 'dish rack', 'destination': 'drawer', 'cleanliness': 'clean'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the dishes have been washed and are now clean?",N/A,str,yes,yes,N/A
+preparation,evaluation_of_conversation,2,"U: This might be a stupid question  
+R: Go ahead, I am here to help, not judge
+U: What is a yolk? The recipe says to retrieve it
+{'object': 'egg', 'location': 'fridge'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user did not know that yolk is a part of the egg?",N/A,str,yes,yes,N/A
+preparation,evaluation_of_conversation,2,"U: i have the egg but i am confused what to do  
+R: What is the step you want to perform?
+U: The recipe says to mix the flour and the egg but I don't want to get my hands dirty
+{'object': 'ladle', 'location': 'drawer', 'cleanliness': 'dirty'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user's hands are clean?",N/A,str,"no {'object': 'whisk', 'location': 'drawer', 'cleanliness': 'clean'}",yes,N/A
+preparation,evaluation_of_conversation,2,"U: I need one of those things used for spaghetti  
+R: What is it you are looking for, a pot, a sift?
+U: You know, to drain water
+{'object': 'hotpot', 'location': 'fridge'} 
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user needs to use a sieve/sifter to cook the spaghetti in?",N/A,str,"no {'object': 'Sieve', 'location': 'cabinet'} 
+no {'object': 'sifter', 'location': 'cabinet'} ",no,N/A
+preparation,evaluation_of_conversation,2,"U: I just took out vegetables from the fridge, they look bad  
+R: In what way do you mean bad
+U: They are dirty
+R: Have you washed them yet?
+U: No, I haven't
+{'object': 'faucet', 'location': 'bathroom', 'action': 'wash vegetables'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the vegetables are cleaner now than what they will be after the user washes them?",N/A,str,"no {'object': 'faucet', 'location': 'sink', 'action': 'wash vegetables'} 
+no {'object': 'vegetables', 'location': 'sink', 'action': 'wash vegetables'} ",no,N/A
+preparation,evaluation_of_conversation,2,"U: this recipe is in american measurement units, I don't know what it corresponds to in metric ones  
+R: What is it you are trying to convert?
+U: I am to add 2 oz of milk, how much is that in mL?
+R: roughly 59.15mL
+{'object': 'milk', 'location': 'fridge', 'ammount':'15', 'unit':'mL'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume this is the only time the user will ask a conversion question?",N/A,str,"no {'object': 'milk', 'location': 'fridge', 'ammount':'59.15', 'unit':'mL'}",no,N/A
+preparation,evaluation_of_conversation,2,"U: Um, how do I cut this eeeh, what's it called, chicken arm?  
+R: if you mean the wing then you might need a cutting board, a plate or a knife
+U: I have a knife
+R: then you should get the cutting board designated for meat on the counter
+{'object': 'meat cutting board', 'location': 'shelf'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user might need to either heat up a pan or the oven?",N/A,str,"no {'object': 'meat cutting board', 'location': 'counter'}",yes,N/A
+cooking,dictionary_return,1,"The soup is ready, give me the tool to pour it in a bowl",N/A,N/A,dict,"{'object': 'ladle', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'spoon', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'spoon', 'room': 'kitchen', 'location': 'drawers'}",N/A,N/A
+cooking,dictionary_return,1,"Ugh, chopping these onions is making my eyes teary! Grab me something to wipe my eyes",N/A,N/A,dict,"{'object': 'tissues', 'room': 'kitchen', 'location': 'counter'}
+{'object': 'tissue', 'room': 'kitchen', 'location': 'counter'}
+{'object': 'tissues', 'room': 'dining room', 'location': 'table'}
+{'object': 'tissue', 'room': 'dining room', 'location': 'table'}
+{'object': 'tissue', 'room': 'kitchen', 'location': 'table'}
+{'object': 'tissues', 'room': 'kitchen', 'location': 'table'}
+{'object': 'kleenex', 'room': 'kitchen', 'location': 'table'}",N/A,N/A
+cooking,dictionary_return,1,I need one of those things that show how cooked an egg is,N/A,N/A,dict,"{'object': 'egg timer', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'egg timer', 'room': 'kitchen', 'location': 'cabinet'}
+{'object': 'egg timer', 'room': 'kitchen', 'location': 'cutlery drawer'}",N/A,N/A
+cooking,dictionary_return,1,"Ouch, i got something in my eye while peeling onions, I need to rinse it, what should i use?",N/A,N/A,dict,"{'object': 'water', 'room': 'kitchen', 'location': 'sink'} 
+{'object': 'eye drops', 'room': 'kitchen', 'location': 'cabinet'} 
+{'object': 'eye drops', 'room': 'kitchen', 'location': 'pharmacy cabinet'}",N/A,N/A
+cooking,dictionary_return,1,"The recipe says to mix the ingredients using a beater, what is that?",N/A,N/A,dict,"{'object': 'whisk', 'room': 'kitchen', 'location': 'utensil drawer'}
+{'object': 'whisk', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'whisk', 'room': 'kitchen', 'location': 'cabinet'}",N/A,N/A
+cooking,dictionary_return,1,What do I flip my burgers with?,N/A,N/A,dict,"{'object': 'spatula', 'cleanliness': 'clean', 'room' : 'kitchen', 'location': 'drawer'}  
+{'object': 'burger spatula', 'cleanliness': 'clean', 'room' : 'kitchen', 'location': 'drawer'} ",N/A,N/A
+cooking,dictionary_return,1,The pasta looks ready for serving but it is wet. What do I do?,N/A,N/A,dict,"{'object': 'colander', 'room': 'kitchen', 'location': 'cabinet'}
+{'object': 'colander', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'sifter', 'room': 'kitchen', 'location': 'cabinet'}
+{'object': 'sifter', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'sieve', 'room': 'kitchen', 'location': 'cabinet'}
+{'object': 'sieve', 'room': 'kitchen', 'location': 'drawer'}",N/A,N/A
+cooking,dictionary_return,1,I want to add some lemon juice to the soup to make it sweeter. I don't have lemon juice and my hands are weak. Get me something to help make juice out of these lemons I have,N/A,N/A,dict,"{'object': 'lemon squeezer', 'room': 'kitchen', 'location': 'cabinet'} 
+{'object': 'lemon squeezer', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'lemon press', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'lemon press', 'room': 'kitchen', 'location': 'cabinet'}
+{'object': 'mixer', 'room': 'kitchen', 'location': 'cabinet'}",N/A,N/A
+cooking,dictionary_return,1,"Fetch me the thing you use to serve soup, a lidl?",N/A,N/A,dict,"{'object': 'ladle', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'ladle', 'room': 'kitchen', 'location': 'cabinet'}",N/A,N/A
+cooking,dictionary_return,1,"I'm running out of tomato puree, fetch me more",N/A,N/A,dict,"{'object': 'tomato puree', 'room': 'kitchen', 'location': 'cabinet'}
+{'object': 'tomato puree', 'room': 'kitchen', 'location': 'pantry'}
+{'object': 'tomato puree', 'room': 'storage room', 'location': 'shelf'}
+{'object': 'tomato puree', 'room': 'kitchen', 'location': 'refrigerator'}
+{'object': 'tomato puree', 'room': 'kitchen', 'location': 'fridge'}",N/A,N/A
+cooking,dictionary_return,1,"I'll be cooking some omellettes, i have the eggs but what should I cook them on?",N/A,N/A,dict,"{'object': 'skillet', 'room': 'kitchen', 'location': 'drawer', 'cleanliness':'clean'}
+{'object': 'skillet', 'room': 'kitchen', 'location': 'cabinet', 'cleanliness':'clean'}
+{'object': 'skillet', 'room': 'kitchen', 'location': 'cupboard', 'cleanliness':'clean'}
+{'object': 'pan', 'room': 'kitchen', 'location': 'drawer', 'cleanliness':'clean'}
+{'object': 'pan', 'room': 'kitchen', 'location': 'cabinet', 'cleanliness':'clean'}
+{'object': 'pan', 'room': 'kitchen', 'location': 'cupboard', 'cleanliness':'clean'}",N/A,N/A
+cooking,yes_no_return,1,Oh no! I forgot to thaw the chicken. Will it help to put it in cold water?,N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+cooking,yes_no_return,1,"This recipe calls for medium heat, but my stovetop only has temperature, not labels. Will a temperature around 170 degrees celcius be good?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+cooking,yes_no_return,1,"Oh no! I used up all my sugar but it wasn't enough according to the recipe, can I add honey to supplement the lack of sugar?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+cooking,yes_no_return,1,"It's time to make lunch, but all I have is frozen pizza, can I skip defrosting it and put it in the oven immidiately?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+cooking,yes_no_return,1,"I bought moldy cheese yesterday, is it safe to eat?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+cooking,yes_no_return,1,Does 1mL convert to one tea spoon?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+cooking,yes_no_return,1,I can't seem to find a lid for my pot. Would a baking sheet be a suitable replacement if I want to create a good seal?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+cooking,yes_no_return,1,Will baking a pie at higher temperature make it cook faster?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+cooking,yes_no_return,1,"My regular cheese is starting to mold, is it safe to eat the moldy parts?",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+cooking,yes_no_return,1,"I have a gas stove, is it ok to leave it on while I go take a shower as the food on it will take a while to cook to save time?",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+cooking,likelihood_return,1,"My induction stove is on but my pot is not getting any heat, could it be that the pot does not support induction?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+cooking,likelihood_return,1,I accidentally spilled a bottle of vinegar on the kitchen counter. It won't leave a strong odor right?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+cooking,likelihood_return,1,Will stiring the food while it cooks help spread the flavors evenly?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+cooking,likelihood_return,1,The oven has been on for an hour. What's the likelihood of it being hot to the touch? ,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,Very likely,N/A,N/A
+cooking,likelihood_return,1,I forgot to turn off the gas stove before leaving the house. What's the likelihood of there being a smell of gas? ,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,Very likely,N/A,N/A
+cooking,likelihood_return,1,"I forgot food in the stove for a couple of hours and am now hearing a beeping sound, what is the likelihood of the food being burnt?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,Very likely,N/A,N/A
+cooking,likelihood_return,1,I spilled oil on the kitchen floor. Is the floor slippery now?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,Very likely,N/A,N/A
+cooking,likelihood_return,1,"The smoke alarm went of, but there is no fire and no smoke, Is it likely a false alarm due to the smoke produced by the cooking?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+cooking,likelihood_return,1,"The kettle on the stove is wheezing, might the water be boiling?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+cooking,likelihood_return,1,I put the freshly baked cookies on the kitchen counter. How likely is it that they are warm?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+cooking,likelihood_return,1,"I spilled my coffee while holding the cup standing, will the floor get dirty?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+cooking,likelihood_return,1,"I dropped my rice cooker and it now has a big dent and cannot be sealed close, could I still cook rice with it?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very unlikely,N/A,N/A
+cooking,likelihood_return,1,"If my child accidentally touches the stove that has been off the whole day, will he get burned?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very unlikely,N/A,N/A
+cooking,likelihood_return,1,"These eggs are from a big distributor, is there any risk of them containing salmonella? There are no known cases and I've had the eggs for a couple of days",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very unlikely,N/A,N/A
+cooking,mcq,1,"My soup seems to need some more seasoning, do I
+A. add sugar
+B. add salt
+C. add brocoli
+D. Add water",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+cooking,mcq,1,"I have cooked my chicken now, do i place it on 
+A. clean plate
+B. the plate that was used for the raw chicken
+C. salad bowl
+D. The pan",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+cooking,mcq,1,"The recipe tells me to use a stockpot for my cooking but i don't know which one it is, is it:
+A. The pan that has a flat bottom, high sides and a long handle
+B. The heavy cooking pot with thick walls and tight fitting lid
+C. The large, cooking pot that has flat bottom, has two handles, is probably for making big ammounts of food.
+D. a saute pan",N/A,"[""A"", ""B"",""C"", ""D""]",str,C,N/A,Explanation: (A => sauce pan) (B => dutch oven) (C => stockpot)
+cooking,mcq,1,"I am supposed to stir the food on the pan, here is what I have available:
+A. clean soup ladle
+B. clean spoon
+C. dirty spatula, full of grease
+D. dirty fork",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+cooking,mcq,1,"I need to stir the soup to mix the ingredients together, what should I use:
+A. teaspoon
+B. fork
+C. spoon full of dough
+D. ladle",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+cooking,mcq,1,"After cutting onion my eyes got really teary, what would you fetch me to help wipe it off?
+A. tissues from the tissue box 
+B. kitchen towel, used to dry hands from flour and other items
+C. use your robotic arm to wipe the tears off of my face
+D. bring a shower towel from the bathroom",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+cooking,mcq,1,"My eggs have been boiling for some time now, how do I know how cooked they are, do I:
+A. Take one out and open it
+B. wait 20 minutes to be on the safe side
+C. Check the egg timer indicating how cooked they are
+D. poke a small hole to see if liquid pours out",N/A,"[""A"", ""B"",""C"", ""D""]",str,C,N/A,N/A
+cooking,mcq,1,"I got something in my eye while cutting food and I need to rinse it, my options are:
+A. lemon juice
+B. expired eye drops that have been open for a year
+C. alloe vera water
+D. an unopened bottle of contact lens water. This is the fluid used to clean contact lenses",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+cooking,mcq,1,"I am making pancakes on the gas stove, what tool should I use to flip the pancakes?
+A. clean plastic spatula
+B. fork
+C. a single chop stick
+D. pinch it with my fingers",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+cooking,mcq,1,"I want to fry some eggs, what cookware should I use:
+A. plate
+B. kettle
+C. pot
+D. none of the above",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,a pan
+cooking,evaluation_of_conversation,2,"U: I can't find it
+R: What are you looking for?
+U: the soup is ready but I don't know how to pour it
+R: What you're looking for is a ladle, it might be in the drawer along with other clean utensils
+U: great yeah
+{'object': 'ladle', 'location': 'drawer', 'cleanliness':'clean'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user is about to eat soup?",N/A,str,yes,yes,N/A
+cooking,evaluation_of_conversation,2,"U: My eyes hurt 
+R: Are they dry? Perhaps you should rinse them with water
+U: I think I got something in my eye whilst cutting up an onion
+R: You should rinse them using eye drops, there is a bottle in the medicine cabin
+{'object': 'Eye drops', 'location': 'medicine cabin'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user's eye is red?",N/A,str,yes,yes,N/A
+cooking,evaluation_of_conversation,2,"U: I have two chickens in different places which one should I use?
+R: Where are they?
+U: One is in the freezer and another has been in the fridge since yesterday night
+R: You should use the one in the fridge as it is not frozen
+U: allright!
+{'object': 'chicken', 'location': 'fridge', 'state': 'thawed'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user is about to cook a chicken dish?",N/A,str,yes,yes,N/A
+cooking,evaluation_of_conversation,2,"U: I have two chickens, both in the fridge, but I don't know which one I should use today
+R: Are their expiration dates the same?
+U: No, one expires in three days and the other in 10 days
+R: You should use the one that will expire soon
+U: yeah you're right
+{'object': 'chicken', 'location': 'fridge', 'remark':'short expiration date'}
+Was semantic extraction successful?","Given this conversation history, is it correct that the user chose the chicken that expires in 10 days?",N/A,str,yes,no,N/A
+cooking,evaluation_of_conversation,2,"U: I am craving some cream cheese, I have two in the fridge, which one should I go for?
+R: Any of them open? what are their expiration dates? are they the same flavor/type?
+U: One is open and seem to have green spots on it and the other is unopened
+R: You should throw away the open one as it is moldy, and use the sealed one.
+U: Oh no, ok
+{'object': 'cream cheese', 'location': 'fridge', 'state': 'unopened'}
+Was semantic extraction successful?","Given this conversation history, is it correct that the user chose the moldy cheese?",N/A,str,yes,no,N/A
+cooking,evaluation_of_conversation,2,"U: I am craving some cream cheese, I have three in the fridge, which one should I go for?
+R: Any of them open? what are their expiration dates? are they the same flavor/type?
+U: One is open and seem to have green spots on it, one is opened but seems to have expired a couple of days ago and one is open but has no green spots and the expiration date is still to come
+R: you should throw away the moldy one and the expired one. Use the one that hasn't expired yet
+U: Oh no, ok
+{'object': 'cream cheese', 'location': 'fridge', 'state': 'moldy, expired'}
+Was semantic extraction successful?","Given this conversation history, is it correct that the user chose the moldy cheese over the non-expired non-moldy one?",N/A,str,"no {'object': 'cream cheese', 'location': 'fridge', 'state': 'unsealed, not expired'} 
+no {'object': 'cream cheese', 'location': 'fridge', 'state': 'open, not expired'}",no,N/A
+cooking,evaluation_of_conversation,2,"U: I need to flip these burgers
+R: How about using a spatula?
+U: I only have one. It is dirty and wet as it is in the sink to be washed.
+R: Then how about using a clean fork?
+U: yeah, that works
+{'object': 'spatula', 'location': 'drawer', 'cleanliness':'clean'}
+Was semantic extraction successful?","Given this conversation history, is it correct that the user used a clean spatula from the drawer to flip the burgers?",N/A,str,"no {'object': 'fork', 'location': 'drawer', 'cleanliness':'clean'}",no,N/A
+cooking,evaluation_of_conversation,2,"U: I am boiling two eggs and a thingie that changes color, how do I know when my eggs are completely cooked?
+R: Do you mean an egg timer that changes color depending on how cooked the eggs are?
+U: Yes
+R: Take a look at what the egg timer says, that is how boiled the eggs are
+{'object': 'egg timer', 'location': 'fridge'}
+Was semantic extraction successful?","Given this conversation history, is it correct that the user is boiling spaghetti",N/A,str,"no {'object': 'egg timer', 'location': 'stove'}",no,N/A
+cooking,evaluation_of_conversation,2,"U: I'm running out of tomato poure
+R: might you have another package of tomato puree on the counter?
+U: Yes, but it is expired
+R: Then you should get one from the storage room closet
+{'object': 'tomato puree', 'location': 'closet', 'room':'kitchen'}
+Was semantic extraction successful?","Given this conversation history, is it correct that the user is making a warm meal for dinner?",N/A,str,"no {'object': 'tomato puree', 'location': 'closet', 'room':'storage room'}",yes,N/A
+cooking,evaluation_of_conversation,2,"U: I want to make some scrambled eggs. I have eggs and a spatula but I don't know what to cook them on. 
+R: What are your alternatives? I suggest some type of pan
+U: the pan I use for making eggs is dirty and wet. I have a pot and a skillet available.
+R: The skillet would be the best fit between the two.
+{'object': 'skillet', 'location': 'cabinet'}
+Was semantic extraction successful?","Given this conversation history, is it correct that the skillet has to be washed after making the scrambled eggs?",N/A,str,yes,yes,N/A
+serving,dictionary_return,1,"I'm about to serve the rice, get me one of those big spoons",N/A,N/A,dict,"{'object': 'serving spoon', 'room': 'kitchen', 'location': 'drawer'} ",N/A,N/A
+serving,dictionary_return,1,Get me the one object to serve sallads with,N/A,N/A,dict,"{'object': 'salad tong', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'salad servers', 'room': 'kitchen', 'location': 'drawer'} ",N/A,N/A
+serving,dictionary_return,1,"I should have one of those trays for butter, i just cleaned it",N/A,N/A,dict,"{'object': 'butter dish', 'room': 'kitchen', 'location': 'sink', 'cleanliness': 'clean'}
+{'object': 'butter dish', 'room': 'kitchen', 'location': 'dish rack', 'cleanliness': 'clean'}
+{'object': 'butter dish', 'room': 'kitchen', 'location': 'plate rack', 'cleanliness': 'clean'}
+{'object': 'butter dish', 'room': 'kitchen', 'location': 'sink', 'cleanliness': 'cabinet'}",N/A,N/A
+serving,dictionary_return,1,"The tea spoons are not good for these cubes of sugar, do we have something else that can grab them?",N/A,N/A,dict,"{'object': 'sugar tong', 'room': 'kitchen', 'location': 'drawer'} ",N/A,N/A
+serving,dictionary_return,1,"I am about to cut the cooked turkey, but my knives are not sharp enough, how do I sharpen them?",N/A,N/A,dict,"{'object': 'knife sharpener', 'room': 'kitchen', 'location': 'drawer'} 
+{'object': 'knife sharpener', 'room': 'kitchen', 'location': 'shelf'}
+{'object': 'knife sharpener', 'room': 'kitchen', 'location': 'table'}
+{'object': 'Sharpening rod', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'Sharpening rod', 'room': 'kitchen', 'location': 'shelf'}
+{'object': 'Sharpening rod', 'room': 'kitchen', 'location': 'table'}
+{'object': 'Honing steel', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'Honing steel', 'room': 'kitchen', 'location': 'shelf'}
+{'object': 'Honing steel', 'room': 'kitchen', 'location': 'table'}",N/A,N/A
+serving,dictionary_return,1,"Ouch! The sheet pan is really hot, how do I take it out of the oven?",N/A,N/A,dict,"{'object': 'oven mitts', 'room': 'kitchen', 'location': 'drawer'} 
+{'object': 'oven mitts', 'room': 'kitchen', 'location': 'under the oven'}
+{'object': 'oven mitts', 'room': 'kitchen', 'location': 'shelf'} 
+{'object': 'pot holders', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'pot holders', 'room': 'kitchen', 'location': 'under the oven'}
+{'object': 'pot holders', 'room': 'kitchen', 'location': 'shelf'}",N/A,N/A
+serving,dictionary_return,1,"I've got this meatloaf, but it is too dry, what can I serve with it to complement it?",N/A,N/A,dict,"{'object': 'gravy sauce', 'room': 'kitchen', 'location': 'fridge'}
+{'object': 'gravy sauce', 'room': 'kitchen', 'location': 'stove'}
+{'object': 'brown sauce', 'room': 'kitchen', 'location': 'fridge'}
+{'object': 'brown sauce', 'room': 'kitchen', 'location': 'stove'}
+{'object': 'sauce', 'room': 'kitchen', 'location': 'fridge'}",N/A,N/A
+serving,dictionary_return,1,This steak would go good with some red,N/A,N/A,dict,"{'object': 'red wine ', 'room': 'kitchen', 'location': 'wine freezer'}
+{'object': 'wine ', 'room': 'kitchen', 'location': 'wine freezer'}
+{'object': 'red wine ', 'room': 'kitchen', 'location': 'fridge'}
+{'object': 'red wine ', 'room': 'kitchen', 'location': 'cabinet'}",N/A,N/A
+serving,dictionary_return,1,"Let's see, I put out the burgers, the lettuce, cucumber, onion and bread. What might I be missing for my simple burger dinner?",N/A,N/A,dict,"{'object': 'tomato', 'room': 'kitchen', 'location': 'fridge'}
+{'object': 'tomato', 'room': 'kitchen', 'location': 'refrigerator'}
+{'object': 'ketchup', 'room': 'kitchen', 'location': 'fridge'}
+{'object': 'ketchup', 'room': 'kitchen', 'location': 'refrigerator'}",N/A,N/A
+serving,dictionary_return,1,The egg is a little bland,N/A,N/A,dict,"{'object': 'salt', 'room': 'kitchen', 'location': 'table'}
+{'object': 'salt', 'room': 'kitchen', 'location': 'dining table'}
+{'object': 'salt', 'room': 'kitchen', 'location': 'shelf'}
+{'object': 'salt shaker', 'room': 'kitchen', 'location': 'table'}
+{'object': 'salt shaker', 'room': 'kitchen', 'location': 'dining table'}",N/A,N/A
+serving,yes_no_return,1,Are spoons good if we are eating rice?,N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+serving,yes_no_return,1,"If I invited six people to join me for dinner, should I prepare cutlery for seven people?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+serving,yes_no_return,1,"I dropped a fork on the ground whilst eating, should I exchange it?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+serving,yes_no_return,1,Could I serve juice to the kids while the adults drink wine?,N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+serving,yes_no_return,1,"My diabetic friend is having dinner with me at home, I have regular coca cola, artificial fruit juices with lots of sugar, should I offer him water instead?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+serving,yes_no_return,1,"I invited some people for dinner. It's going to be me, my friend and his wife, my father, my boss and my wife, she won't be eating though. Should I prepare 6 plates for the dinner?",N/A,"[""yes"",""no""]",str,no ,N/A,N/A
+serving,yes_no_return,1,Should I serve candy with the dinner?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+serving,yes_no_return,1,Can I pour wine for the kids?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+serving,yes_no_return,1,Can I serve my vegetarian friend some of my famous chilli con carne?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+serving,yes_no_return,1,"Can I use this a dirty plate without cleaning it first, to serve a guest?",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+serving,likelihood_return,1,"I had to reheat a bowl of soup in the microwave, the duration was about 15 minutes, how likely is the bowl itself to be warm when touched?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+serving,likelihood_return,1,"I grilled potatoes wrapped in foil, I am about to serve them after just taking them out to the table. How likely is it the potatoes are hot?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+serving,likelihood_return,1,"If my friend who is nut allergic accidentally ate a handful of peanuts, will he have an allergic reaction?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+serving,likelihood_return,1,"For an appetizer I presented some sliced apples and other fruits, a friend is complaining that his throat has been itching him ever since he ate a sliced apple, might he be allergic to them?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+serving,likelihood_return,1,"My kid has been whining a lot and I haven't seen him eat anything for a couple of hours, might he be hungry?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+serving,likelihood_return,1,"My friend is, to my knowledge, allergic to bananas. Will he have an allergic reaction if he eats apple pie? ",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+serving,likelihood_return,1,"Guests were invited for dinner, they have been here for one hour now and it is time for the dinner. They did not mention but might they have already eaten prior to their arrival?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+serving,likelihood_return,1,"I forgot the sauce to the dish, now everyone will hate the taste of it",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very unlikely,N/A,N/A
+serving,likelihood_return,1,"I had to reheat a bowl full of cold soup in the microwave, the duration was about 2 minutes, how likely is the soup to be warm?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+serving,likelihood_return,1,"A kid dropped a plate of rice on the table, will it leave a stain?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very unlikely,N/A,N/A
+serving,mcq,1,"I am about to serve cake, it is a small cake and we are a lot of people. Should I serve the cake using
+A. Big plates
+B. Small plates
+C. Big bowls
+D. Small bowls",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+serving,mcq,1,"When serving rice on multiple plates, i ought to use
+A. dirty serving spoon
+B. a big clean fork
+C. clean serving spoon
+D. clean tea spoon",N/A,"[""A"", ""B"",""C"", ""D""]",str,C,N/A,N/A
+serving,mcq,1,"I am preparing some soup and it is time for serving. I now realize I don't have enough clean bowls for three people so here are my options:
+A. two clean bowls and a dirty one
+B. two clean bowl and one flat plate 
+C. each one gets a flat plate 
+D. two clean bowls and a deep plate ",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+serving,mcq,1,"What should I use to serve rice if my serving spoon is in the washing machine:
+A. A regular spoon
+B. A fork
+C. a tea spoon
+D. a kids spoon",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+serving,mcq,1,"What should I use to serve rice:
+A. a dirty serving spoon 
+B. a regular spoon
+C. a tea spoon
+D. a fork",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+serving,mcq,1,"How should I serve the salad to my guests?
+A. use dirty salad tong 
+B. use one fork
+C. use two spoons
+D. use my hand",N/A,"[""A"", ""B"",""C"", ""D""]",str,C,N/A,N/A
+serving,mcq,1,"How do I sharpen these knives
+A. knife sharpener
+B. rub one knife on to the other like chefs do before cutting
+C. buy new knives as knives cannot be sharpened
+D. Use an electric grinder to sharpen the blades",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+serving,mcq,1,"The meat plate in the stove is cooked, now what do I do to serve it:
+A. pull the plate out of the stove with my bare hand to start serving
+B. open the door to the stove and let it cool down before serving
+C. use Parchment paper to hold the plate and start serving
+D. use oven mitts to pull it out and start serving",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+serving,mcq,1,"I have invited three friends and we are about to eat some soup, what should I prepare:
+A. four clean forks
+B. four dirty spoons
+C. three clean spoons
+D. four clean spoons",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+serving,mcq,1,"I am serving sliced eggs with bread this morning, what can I have to complement the flavor?
+A. water
+B. gravy
+C. salt 
+D. nigella seeds",N/A,"[""A"", ""B"",""C"", ""D""]",str,C,N/A,N/A
+serving,mcq,1,"I have guests over but I have not cooked anything, what should I serve them:
+A. The package of Merci chocolate they brought, along with refreshments
+B. apologize and tell them I don't have anything to serve them
+C. tell them to come back another day after I have bought food from the store
+D. knowing I don't have anything I pretend to get an urgent call and have them leave",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+serving,evaluation_of_conversation,2,"U: It's crazy hot weather, I have guests coming and I don't have any beverages to serve, what do I do?
+R: Run down to the supermarket that is close by and buy what you need
+U: I don't think I have ice either what about that?
+R: You can buy a bag of ice from the supermarket
+U: ah is that so, I think I'll just buy 6 cold bottles instead
+{'object': 'bottles', 'location': 'supermarket', 'quantity': '6', 'state':'cold'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user is not prepared to have guests over?",N/A,str,yes,yes,N/A
+serving,evaluation_of_conversation,2,"U: I'm serving breakfast. I can't locate the butter, but I'm sure my partner bought some yesterday. 
+R: Have you looked in the fridge and the pantry?
+U: Of course I have!
+R: Could it be that it is placed on a butter tray and you missed it in the fridge whilst looking for a regular butter package?
+U: oh yeah, you're right, I see it now.
+{'object': 'butter package', 'location': 'fridge'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that no butter was bought yesterday?",N/A,str,"no  {'object': 'butter tray', 'location': 'fridge'}",no,N/A
+serving,evaluation_of_conversation,2,"U: I am serving tea, only one person among us drinks their tea without sugar. I have four cups, three from one set and a green cup. Which one should I use for the one person who doesn't want sugar?
+R: The simplest way to remember is to use the uniquely colored cup for that person.
+{'object': 'random cup'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that everyone present drinks their tea with sugar?",N/A,str,"no {'object': 'green cup'} 
+no {'object': 'cup', 'color':'green'}
+no {'object': 'cup', 'colour':'green'} ",no,N/A
+serving,evaluation_of_conversation,2,"U:  Oh nooooo!
+R: What's wrong?
+U: All of my favorite knives are not sharp anymore. I will  have to throw them away, but I don't have money to buy so many good quality knives.
+R: You could just buy a knife sharpener from Ikea or other stores that sell them
+U: Oh that's a good idea, thanks.
+{'object': 'knife sharpener', 'location': 'Ikea'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user was eating soup when he realizes this?",N/A,str,yes,no,N/A
+serving,evaluation_of_conversation,2,"U: Got a question for you, how should I take out this plate that's in the oven? 
+R: You might want to use oven mittens for that
+U: ehm, I don't have that
+R: how about pot holders? 
+U: I don't have that either, I'll buy some next week.
+R:how about some layers of a clean towel
+U: yeah that works
+{'object': 'towel'} 
+Was semantic extraction successful?","Given this conversation history, will the user be able to eat what they cooked?",N/A,str,yes,yes,N/A
+serving,evaluation_of_conversation,2,"U: This meatloaf is super dry, I'm grabbing some water.
+U: Is there something I can do for its dryness?
+R: How about pouring some sauce on top? I suggest gravy sauce
+U: sure that sounds good, get that
+{'object': 'water', 'location': 'tap'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that other people at the table feel the same about the meatloaf?",N/A,str,"no {'object': 'gravy sauce'} 
+no {'object': 'gravy sauce', 'location': 'table'} 
+no {'object': 'gravy sauce', 'location': 'frigde'} 
+no {'object': 'gravy sauce', 'location': 'stove'}",yes,N/A
+serving,evaluation_of_conversation,2,"U: This steak would go good with some red
+R: Do you mean red wine?
+U: yeah, we should have some
+R: ok, I'll go get one from the wine cooler
+U: Oh and don't bring glasses, there are already a couple on the table
+{'object': 'wine glass'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user is about to pour some white wine?",N/A,str,"no {'object': 'wine', 'location': 'wine cooler'} 
+no {'object': 'wine', 'location': 'winecooler'}",no,N/A
+serving,evaluation_of_conversation,2,"U: I might be missing something for my burger...So far I have lettuce, tomato, burgers and cucumber.
+R: what about onion slices?
+U: I already have those, that's not it
+R: the burger bread?
+U: yes of course!
+{'object': 'burger bread'} 
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user has ordered food from a burger restaurant?",N/A,str,yes,no,N/A
+serving,evaluation_of_conversation,2,"U: hey, so I have this home made carrot cake and I have friends over
+R: Yes, that sounds nice
+U: Yeah but I have this one friend and I don't know if he can eat it as he always avoids sugar
+R: It would be best to serve that friend another cake or at least tell them that it contains sugar
+U: I'll serve him the vanilla cake in the fridge, that one is sugar free. Can you get it?
+{'object': 'vanilla cake', 'location': 'fridge'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that only one person is diabetic?",N/A,str,yes,yes,N/A
+serving,evaluation_of_conversation,2,"U: I have guests coming over, can you put plates on the dining table, for three of my friends and for me as well.
+R: Sure, I'll put four plates on the table
+U: Oh I forgot, my wife will be there as well
+R:  I'll prepare five plates then
+U: Oh and my cousin is joining us too!
+R: six plates then
+{'object': 'plate', 'location': 'cabinet', 'quantity': '4'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user forgot two people initially?",N/A,str,"no {'object': 'plate', 'location': 'cabinet', 'quantity': '6'}",yes,N/A
+eating,dictionary_return,1,"Oh no, I drank up all my orange juice, I want more though",N/A,N/A,dict,"{'object': 'Orange juice', 'room': 'kitchen', 'location': 'fridge'} 
+{'object': 'Orange juice', 'room': 'kitchen', 'location': 'refrigerator'} ",N/A,N/A
+eating,dictionary_return,1,I'm going to start pouring soup now be ready,N/A,N/A,dict,"{'object': 'bowl', 'room': 'kitchen', 'location': 'cabinet'} 
+{'object': 'bowl', 'room': 'kitchen', 'location': 'drawer'} ",N/A,N/A
+eating,dictionary_return,1,"Let us pour up juice for five kids, I will get the juice, you get the rest",N/A,N/A,dict,"{'object': 'glasses', 'room': 'kitchen', 'location': 'cabinet', 'quantity' : '5'} 
+{'object': 'glass', 'room': 'kitchen', 'location': 'cabinet', 'quantity' : '5'} 
+{'object': 'cups', 'room': 'kitchen', 'location': 'cabinet', 'quantity' : '5'} 
+{'object': 'cup', 'room': 'kitchen', 'location': 'cabinet', 'quantity' : '5'} ",N/A,N/A
+eating,dictionary_return,1,"I am in the middle of eating and my hands are dirty, I notice someone calling me and I want to answer",N/A,N/A,dict,"{'object': 'Tissues', 'room': 'Dining room', 'location': 'table'}
+{'object': 'Tissue', 'room': 'Dining room', 'location': 'table'}
+{'object': 'napkins', 'room': 'Dining room', 'location': 'table'} 
+{'object': 'tissue box', 'room': 'Dining room', 'location': 'table'} ",N/A,N/A
+eating,dictionary_return,1,My dad likes his tea sweet,N/A,N/A,dict,"{'object': 'sugar', 'room': 'kitchen', 'location': 'countertop'} 
+{'object': 'sugar', 'room': 'kitchen', 'location': 'table'}
+{'object': 'sugar', 'room': 'dining room', 'location': 'table'}",N/A,N/A
+eating,dictionary_return,1,How am I going to eat this soup?,N/A,N/A,dict,"{'object': 'spoon', 'room': 'kitchen', 'location': 'drawer'}",N/A,N/A
+eating,dictionary_return,1,"I am going to serve the pizza now, but it would be a good idea to cut it into pieces first",N/A,N/A,dict,"{'object': 'pizza cutter', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'knife', 'room': 'kitchen', 'location': 'drawer'}",N/A,N/A
+eating,dictionary_return,1,"The salad looks good, but how do I serve it to people?",N/A,N/A,dict,"{'object': 'salad server', 'room': 'kitchen', 'location': 'drawer'} 
+{'object': 'salad servers', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'spoon', 'room': 'kitchen', 'location': 'drawer'}",N/A,N/A
+eating,dictionary_return,1,"This might get messy, this pasta sauce might stain all over my shirt and mouth, what should I do to protect my shirt?",N/A,N/A,dict,"{'object': 'napkin', 'room': 'kitchen', 'location': 'counter'}
+{'object': 'napkins', 'room': 'Dining room', 'location': 'table'} 
+{'object': 'napkins', 'room': 'kitchen', 'location': 'table'} ",N/A,N/A
+eating,dictionary_return,1,This food looks delicious but would be even better with a cold drink,N/A,N/A,dict,"{'object': 'drink', 'room': 'kitchen', 'location': 'fridge', 'state':'cold'}
+{'object': 'drink', 'room': 'kitchen', 'location': 'fridge', 'temperature':'cold'}
+{'object': 'drink', 'room': 'kitchen', 'location': 'refrigerator', 'state':'cold'}
+{'object': 'drink', 'room': 'kitchen', 'location': 'refrigerator', 'temperature':'cold'}
+{'object': 'soda', 'room': 'kitchen', 'location': 'fridge', 'temperature':'cold'}",N/A,N/A
+eating,yes_no_return,1,Could I use a fork to eat rice?,N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+eating,yes_no_return,1,If my friend is allergic to eggs should he avoid eating my super tasty fried rice?,N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+eating,yes_no_return,1,"If the pot is very hot, would it be good to put it on a trivet on the dining room table?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+eating,yes_no_return,1,Can you put ketchup on mashed potatoes?,N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+eating,yes_no_return,1,"I am making a pad thai with peanuts, but if I have a nut allergic friend coming over I should probably omit using the nuts right?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+eating,yes_no_return,1,Is fork a good option if I am eating soup?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+eating,yes_no_return,1,Are appetizers served after the main meal?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+eating,yes_no_return,1,Are wine glasses exclusive to wine?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+eating,yes_no_return,1,"If I am eating noodles and pasta, is a spoon a good choice?",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+eating,yes_no_return,1,"If i have soup, could i eat it with chop sticks?",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+eating,likelihood_return,1,"This potato is very hard and cold on the inside, might it still be raw?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+eating,likelihood_return,1,"Hmm, this bread has some green marks on it, could it be mold?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+eating,likelihood_return,1,"If the bread has mold on it, could it be old bread?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+eating,likelihood_return,1,"The drink tastes watery, could it be that the ice had melted causing a layer of water?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+eating,likelihood_return,1,The taste of salt is the most evident in the soup. Might I have put too much in it?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+eating,likelihood_return,1,"This coffee tastes entirely different this morning, might someone have changed the beans?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+eating,likelihood_return,1,"The coffee tastes odd this afternoon, could it be that this is the mornings batch, reheated?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+eating,likelihood_return,1,"The rice is very soggy, could it be that I put in too much water?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+eating,likelihood_return,1,My rice pot is always burnt on the bottom. could it be a bad brand of rice?,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+eating,likelihood_return,1,"The steak I made was supposed to be medium rare, its color is red inside and when pushed it extrudes liquid, might it be overcooked? ",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very unlikely,N/A,N/A
+eating,likelihood_return,1,"I want to eat this soup with bread. I have some three week old bread on the table, might it still be soft?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very unlikely,N/A,N/A
+eating,mcq,1,"This is my first time cooking, I made a steak with wine sauce, my kid is eating with me. Should I
+A. serve him some of the steak with wine sause 
+B. serve him some chicken nuggets
+C. serve him cereals with milk
+D. serve him peas and vegetables",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+eating,mcq,1,"I drank all of my orange juice, what should I do:
+A. Pour more orange juice
+B. pour water in the glass
+C. pour coca cola into the glass
+D. pour wine into the glass",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+eating,mcq,1,"I ate all my soup and asked for seconds, now the host is standing by with the soup pot should I:
+A. reach out with an empty glass
+B. reach out with a flat plate
+C. assume it's a staring contest and maintain eye contact
+D. reach out with my empty bowl for a second serving of soup",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+eating,mcq,1,"I have five kids at the dining room table and they all want more orange juice. I only have orange juice enough for four people, should I:
+A. Give them all water out of fairness and equality
+B. not give them anything and drink up the juice myself
+C. ask them who wants apple juice instead, then give juice to all the kids depending on the one they choose
+D. lie to them and tell them that they will get some juice later and hope they forget",N/A,"[""A"", ""B"",""C"", ""D""]",str,C,N/A,N/A
+eating,mcq,1,"I am in the middle of eating burgers, my hands are a bit greasy and ketchup has fallen on them. Suddenly the phone rings and it seems like an important call, should I:
+A. take my sweet time and finish this burger
+B. get a tissue to wipe my hands and answer
+C. answer with a dirty hand, smudging the phone
+D. ask a stranger to answer and tell me what it is about",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+eating,mcq,1,"I am pouring tea to everyone in my family. My dad likes his tea quite sweet, should I then:
+A. put a grain of sugar in it
+B. add a tea spoon of salt in
+C. put two tea spoons of sugar in 
+D. add a teaspoon of lemon juice in",N/A,"[""A"", ""B"",""C"", ""D""]",str,C,N/A,N/A
+eating,mcq,1,"I have a vegetarian friend over and we are eating together, what could I recommend him trying:
+A. delicious beefsteak with potatoes and complementing sauce
+B. hamburger with complementing sides and sauces
+C. Chicken tikka masala
+D. Falafel wrap with avocado, mint leaves, cucumber, tomato and amba sauce ",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+eating,mcq,1,"I was given a 500 bill to spend on food for the week, which of the alternatives gives an outcome where I don't starve, since I should plan my meals so the money lasts:
+A. 100 to eat out on Monday, 300 to buy enough ingredients to make food for Tuesday, Thursday, Friday, Saturday and Sunday. And lastly 100 to eat out on Wednesday
+B. Eat out everyday, 100 a day until the money is all spent up and then not eat if there are days left
+C. 200 to eat out on Monday, 300 to buy enough ingredients to make food for Tuesday, Thursday, Friday, Saturday and Sunday. And lastly 200 to eat out on Wednesday
+D. Spend the 500 on an expensive dinner on Monday and eat enough food to last the entire week.",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+eating,mcq,1,"This pasta sauce might be a messy problem while eating, what should I offer the grown ups for them to not stain their shirts:
+A. children's bib
+B. give each one a napkin to put on their laps and by their throats
+C. give each one an over-sized  shirt, that way if they get dirty I just have to clean them
+D. I am not obligated to help them in any way and will refrain from doing anything",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+eating,mcq,1,"We were in the midst of eating and a friend starts coughing hysterically, though it does not look like he got something stuck in the throat, what can I do to alleviate and help them:
+A. Tell him that if he holds his breath the coughing should stop
+B. Tell him he should have more delicious pasta
+C. Hit him hard in the back until he stops coughing
+D. Hand them a glass of water",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+eating,evaluation_of_conversation,2,"U: It's time to take a break with the kids, should I get them tea or vinegar shots?
+R: Neither sound like good alternative for kids
+U: Then how about apple juice or water?
+R: Apple juice seems like a good idea
+U: let's go with that then, I'll pour myself water but could you help out with the kids' drinks?
+{'object': 'apple juice', 'location': 'fridge'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user is unfamiliar with what kids eat and drink?",N/A,str,yes,yes,N/A
+eating,evaluation_of_conversation,2,"U: I'm having dinner and have already drank around 1L of coca cola, but I still want more
+R: You might want to opt for water instead, as it is not good for you to drink that much soda
+U: How about Fanta instead?
+R: I am simply an assistant that follows instructions, however I would like to point out that that is still a soda as well.
+U: Fine, I'll go for the healthy option then
+{'object': 'Fanta', 'location': 'fridge'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user did not listen to the robot's advice?",N/A,str,"no  {'object': 'water', 'location': 'sink'} 
+no {'object': 'tap', 'location': 'sink'}",no,N/A
+eating,evaluation_of_conversation,2,"U: My friends and I are eating dinner and my vegetarian friend is asking for a refill on his bowl. The problem is that there's no more of the soup he just ate as it was quite popular among the guests. Although I do have other alternative soups. Can I give him one of those?
+R: What are the alternatives?
+U: I have beef lentil soup, beef soup and lentil soup
+R: Lentil soup is the appropriate option
+U: he changed his mind, he wants to have some water instead, could you get that?
+{'object': 'lentil soup', 'location': 'table'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user is not prepared to have guests over?",N/A,str,"no {'object': 'water', 'location': 'sink'} 
+no {'object': 'water', 'location': 'tap'}",no,N/A
+eating,evaluation_of_conversation,2,"U: Orange juice would be good to drink right? Yeah, the doctor said that the values were a bit low and I should get supplements
+R: I see, i could get it for you
+U: Hasn't been any sun out in days, lucky I am taking vitamin D supplements already.
+{'object': 'orange juice', 'location': 'fridge'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user is low on vitamin D?",N/A,str,yes,yes,N/A
+eating,evaluation_of_conversation,2,"U: I am low on vitamin C and vitamin D. I'll pour myself a glass of orange juice, that should help for my vitamin D deficiency. Can you get me a vitamin C supplement from the cabinet though.
+R: Actually, oranges contain vitamin C. If you want to replenish both then I could get you vitamin D supplements instead? 
+U: Ok
+{'object': 'vitamin D supplement', 'location': 'cabinet'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user intended to drink orange juice because they were low on vitamin D?",N/A,str,yes,yes,N/A
+eating,evaluation_of_conversation,2,"U: We are drinking tea and my dad tells me that his tea is not sweet at all
+R: Adding sugar will solve that
+U: I had only enough sugar for one tea spoon and that did not satisfy him. Anything else I can do?
+R: You could add honey
+U: Let's do that yeah, get it for me
+{'object': 'sugar'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user's father usually takes at least two tea spoons of sugar in his tea?",N/A,str,"no  {'object': 'honey', 'location': 'pantry'} 
+no  {'object': 'honey', 'location': 'table'}",yes,N/A
+eating,evaluation_of_conversation,2,"U: The pizza has been served but everyone seem to be waiting on something, it's not cut yet so maybe that might be it
+R: That sounds reasonable
+U: But cutting it with a knife is hard, is there any easier way?
+R: use a pizza cutter
+U: ok, I'll have to wash it first, I threw it in the sink previously
+{'object': 'pizza cutter', 'location': 'dining table', 'cleanliness':'clean'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the guests have already eaten and don't want pizza?",N/A,str,"no  {'object': 'pizza cutter', 'location': 'sink', 'cleanliness':'dirty'}",no,N/A
+eating,evaluation_of_conversation,2,"U: I want to make some fresh juice but I cannot find the peeler
+R: If you want fresh juice then you might want to look for a mixer instead
+U: I don't have that
+R: How about a manual juicer
+U: oh right, I forgot I had that, it's in the cabin
+{'object': 'manual juicer', 'location': 'cabinet'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user has a pineapple they want to make juice out of?",N/A,str,yes,no,N/A
+eating,evaluation_of_conversation,2,"U: I am eating dinner with some colleagues. We are having some pasta with sauce. It looks like the sauce risks staining my clothes, what do I do?
+R: You can grab a napkin
+U: What would I do with it, I haven't started eating yet
+R: You can put it on your lap or tuck it into your shirt to protect you against stains
+U: good thinking, there should be a box on the counter
+{'object': 'box of napkins', 'location': 'counter'} 
+Was semantic extraction successful?","Given this conversation history, should the user offer the others a napkin as well, out of courtesy?",N/A,str,yes,yes,N/A
+eating,evaluation_of_conversation,2,"U: I want something to drink while eating, that would be nice.
+R: Sure, hot or cold?
+U: It's too warm for a hot drink, so things like coffee is no go
+R: I see, how about ice coffee?
+U: that is a cold one, but a Pepsi would be better
+{'object': 'ice coffee', 'location': 'fridge'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user prefers soda drinks over coffees?",N/A,str,"no  {'object': 'pepsi', 'location': 'fridge'}
+no  {'object': 'Pepsi', 'location': 'fridge'}",yes,N/A
+cleaning_leftovers,dictionary_return,1,What do i do with this dirty plate?,N/A,N/A,dict,"{'object': 'plate', 'room': 'kitchen', 'location': 'sink'} 
+{'object': 'dirty plate', 'room': 'kitchen', 'location': 'sink'} 
+{'object': 'ladle', 'room': 'kitchen', 'location': 'dishwasher'}",N/A,N/A
+cleaning_leftovers,dictionary_return,1,"This pot is still greasy, we need to reclean it!",N/A,N/A,dict,"{'object': 'sponge', 'room': 'kitchen', 'location': 'dish rack'} 
+{'object': 'sponge', 'room': 'kitchen', 'location': 'sink'}
+{'object': 'dishwasher', 'room': 'kitchen', 'location': 'dishwasher'}",N/A,N/A
+cleaning_leftovers,dictionary_return,1,"Before I start the dishwasher, hand me the capsule",N/A,N/A,dict,"{'object': 'dishwasher detergent pods', 'room': 'kitchen', 'location': 'pantry'}
+{'object': 'detergent pods', 'room': 'kitchen', 'location': 'pantry'}
+{'object': 'dishwasher pods', 'room': 'kitchen', 'location': 'pantry'}
+{'object': 'detergent', 'room': 'kitchen', 'location': 'pantry'}
+{'object': 'capsule', 'room': 'kitchen', 'location': 'drawer'}
+{'object': 'capsule', 'room': 'kitchen', 'location': 'sink'}
+{'object': 'capsule', 'room': 'kitchen', 'location': 'under the sink'}",N/A,N/A
+cleaning_leftovers,dictionary_return,1,"Oh no! my kid dropped the soy sauce bottle on the floor, we need to clean it",N/A,N/A,dict,"{'object': 'mop', 'room': 'kitchen', 'location': 'beside the fridge'} 
+{'object': 'mop', 'room': 'bathroom'}
+{'object': 'mop', 'room': 'storage room'}
+{'object': 'cloth', 'room': 'kitchen', 'location':'sink'}",N/A,N/A
+cleaning_leftovers,dictionary_return,1,How do I clean the oven glass?,N/A,N/A,dict,"{'object': 'baking soda', 'room': 'kitchen', 'location': 'cabinet'}
+{'object': 'cleaning spray', 'room': 'kitchen', 'location': 'cabinet'}
+{'object': 'cleaning spray', 'room': 'kitchen', 'location': 'under the sink'}
+{'object': 'cleaning spray', 'room': 'storage room', 'location': 'counter'} 
+{'object': 'vinegar', 'room': 'kitchen', 'location': 'counter'}
+{'object': 'vinegar', 'room': 'kitchen', 'location': 'shelf'}
+{'object': 'vinegar', 'room': 'kitchen', 'location': 'cupboard'}",N/A,N/A
+cleaning_leftovers,dictionary_return,1,"I have to clean my backsplash, where is it most likely dirty the most, answer to nearest object",N/A,N/A,dict,"{'object': 'stove', 'room': 'kitchen', 'location': 'backsplash'}",N/A,N/A
+cleaning_leftovers,dictionary_return,1,"There are a lot of dirty dishes on the table, I don't want to go back and forth to the sink, get me something to carry many plates at ones",N/A,N/A,dict,"{'object': 'tray', 'room': 'kitchen', 'location': 'cabinet'}
+{'object': 'tray', 'room': 'kitchen', 'location': 'counter'}
+{'object': 'tray', 'room': 'kitchen', 'location': 'shelf'}
+{'object': 'serving tray', 'room': 'kitchen', 'location': 'shelf'}
+{'object': 'serving tray', 'room': 'kitchen', 'location': 'cabinet'}",N/A,N/A
+cleaning_leftovers,dictionary_return,1,My food is cold but I still haven't finished,N/A,N/A,dict,"{'object': 'cold food', 'room': 'kitchen', 'location': 'microwave'}
+{'object': 'food', 'room': 'kitchen', 'location': 'microwave'}",N/A,N/A
+cleaning_leftovers,dictionary_return,1,"What do I do with the little soggy food my kid left on their plate, there is barely any left and all of it is half eaten",N/A,N/A,dict,"{'object': 'food rests', 'room': 'kitchen', 'location': 'trashcan'}",N/A,N/A
+cleaning_leftovers,dictionary_return,1,"My kids were eating some fruits, what do I do with the leftovers, they are not worth putting back into the fridge...",N/A,N/A,dict,"{'object': 'leftover fruit', 'room': 'kitchen', 'location': 'compost bin'}
+{'object': 'fruit', 'room': 'kitchen', 'location': 'compost bin'}
+{'object': 'leftover fruit', 'room': 'kitchen', 'location': 'trash'}
+{'object': 'leftover fruit', 'room': 'kitchen', 'location': 'trashcan'}
+{'object': 'fruit', 'room': 'kitchen', 'location': 'trash'} 
+{'object': 'fruit', 'room': 'kitchen', 'location': 'trashcan'}",N/A,N/A
+cleaning_leftovers,yes_no_return,1,Can I use the dishwasher to wash plastic containers?,N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+cleaning_leftovers,yes_no_return,1,"The kitchen counter is really dirty, can I use wet wipes for that?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+cleaning_leftovers,yes_no_return,1,There's leftover rice in the pot. Can I store the entire pot in the fridge?,N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+cleaning_leftovers,yes_no_return,1,"Should I just use a big plate, put all the leftovers in it and store it in the fridge?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+cleaning_leftovers,yes_no_return,1,"This chicken seem have been forgotten on the counter, it looks moldy now. Should I throw it away?",N/A,"[""yes"",""no""]",str,yes,N/A,N/A
+cleaning_leftovers,yes_no_return,1,Will it be fine to leave the leftover chicken out for the night?,N/A,"[""yes"",""no""]",str,no,N/A,N/A
+cleaning_leftovers,yes_no_return,1,"I can't eat the rest of this ice cream, can i just leave it at the table and come back in an hour to finish it?",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+cleaning_leftovers,yes_no_return,1,"I have to clean these dishes, but I don't want to get my hands wet, can I use disinfecting wipes instead?",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+cleaning_leftovers,yes_no_return,1,"My sponge lets out some green soapy liquid when wet and squished, should I change it?",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+cleaning_leftovers,yes_no_return,1,"I have a little water left in my cup, it looks to be a bit dirty, can I put it back into the thermos",N/A,"[""yes"",""no""]",str,no,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"There's a puddle of water under the freezer, could it be that it was not closed properly? ",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,I spilled water on the kitchen floor. What's the likelihood of it being slippery? ,N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"My soup bowl is hot yet the contents is not, could it be that it was not heated up the correct amount of time?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"Butterflies are gathering in one of my cabinets, could it be because of food residues such as spilled honey?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,very likely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"My cucumber and tomato sandwich is soggy after being put in the fridge for a while, could it be that the bread absorbed water from the vegetables?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"Seems like I forgot some bread on the table from last night, how likely is it that it has gone stale in the morning?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"I didn't put the lid back on my candy box, and it has now been out for days, might the candy have gone stale?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,likely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"The dishwasher is making a weird sound, could it be a loose screw?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"I spilled a bag of flour on the kitchen counter, will using a dry paper towel be enough to clean up the mess",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"My automatic soap dispenser is making a sound but no soap is coming out, could it be broken?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"I forgot to seal my bag of bread, it has been thirty minutes, could it already be stale?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"I forgot to put the leftover chicken in the fridge and I have been gone for ten minutes, might it have gone bad?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,unlikely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"Hey, this is a huge mess, what if I just leave it be, will I wake up with it magically gone? (I live alone)",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,Very unlikely,N/A,N/A
+cleaning_leftovers,likelihood_return,1,"If I let my kid help me with the cleaning and he drops a plastic mug on the floor, will it break?",N/A,"[""very unlikely"", ""unlikely"", ""likely"", ""very likely""]",str,Very unlikely,N/A,N/A
+cleaning_leftovers,mcq,1,"I have this dirty plate but my dishwasher is in the middle of a cleaning cycle, what should I do:
+A. open the dishwasher and put the plate in
+B. clean the plate by hand
+C. leave the plate in the dining room
+D. throw away the plate",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+cleaning_leftovers,mcq,1,"I just cleaned this pot but it is still greasy, what should I do:
+A. reclean it with extra soap this time
+B. leave it to dry 
+C. use a stainless steel sponge and scrape the grease off of the metal pot
+D. set the pot upside down in the sink and let the grease flow out from it",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+cleaning_leftovers,mcq,1,"I am about to start the dishwasher, what should I do before starting a cycle:
+A. put in an open bottle of liquid soap
+B.put in a bar of soap
+C. Add a dishwasher pod
+D. take out all the dirty dishes before starting the dishwasher",N/A,"[""A"", ""B"",""C"", ""D""]",str,C,N/A,N/A
+cleaning_leftovers,mcq,1,"A kid dropped some sauce on my floor, what should I use to clean it up:
+A. A wet mop 
+B. a dried up cloth
+C. the dirty kitchen towel
+D. a glass of water",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+cleaning_leftovers,mcq,1,"The oven is giving off a terrible smell, it seems to be time to clean its inside, what should I use:
+A. Heat up the oven to 2000 degrees Celsius and let the residuals burn down
+B. Use water and a sponge, then heat up the oven to dry off the water
+C. ignore the smell and hope that it does not cause the fire alarm to go off
+D. Use an oven cleaner spray and a sponge",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+cleaning_leftovers,mcq,1,"My backsplash is looking hideous from all the food stains, I ought to clean it! what should I use:
+A. a stainless steel sponge
+B. a dry cloth
+C. splash it with water from a cup
+D. regular sponge, soap and water",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+cleaning_leftovers,mcq,1,"There are a lot of dirty dishes on the dining table that I need to clean, what do I do to get them to the sink:
+A. Stack them up as good as it gets and carry them over
+B. There are 20 dirty plates, leave them be and clean them one a day till they are all clean.
+C. Get a tray to put everything on
+D. walk back and forth 20 times taking one thing at a time until everything is cleaned up",N/A,"[""A"", ""B"",""C"", ""D""]",str,C,N/A,N/A
+cleaning_leftovers,mcq,1,"I cooked too much for this dinner and half of it has been left untouched, what should I do:
+A. wrap up the plate in plastic foil and put it in the fridge
+B. throw it all away in the trash
+C. put it through the food grinder in the sink, while having to empty it multiple times
+D. force everyone to stay until we finish the food on the plates",N/A,"[""A"", ""B"",""C"", ""D""]",str,A,N/A,N/A
+cleaning_leftovers,mcq,1,"There is still food on my kid's plate, about a fifth of it, but it is all soggy and he does not want to eat any more. What do I do with it
+A. force him to eat it all, telling him that it is needed to grow tall in the pretext to not having to deal with leftovers
+B. throw it away
+C. leave it and have him eat it when he gets hungry again a day later
+D. send it as a gift to the neighbours",N/A,"[""A"", ""B"",""C"", ""D""]",str,B,N/A,N/A
+cleaning_leftovers,mcq,1,"Hmm, there is a puddle forming on the wooden floor below the freezer, the area around it is colder than the rest, a sound coming from it and the door seems to be open. What should I do:
+A. buy a new fridge since the freezer is leaking
+B. find the one who is responsible for this mess first
+C. let it be, the floor should dry up on its own and the sound ought to disappear soon.
+D. Use a towel, paper or cloth to dry off the wet area and close the freezer door.",N/A,"[""A"", ""B"",""C"", ""D""]",str,D,N/A,N/A
+cleaning_leftovers,evaluation_of_conversation,2,"U: I've got these plates from the dining table, what do I do with them?
+R: Are they clean?
+U: No, they aren't, but it's too much of a borher to clean them by hand
+R: You could put them in the dishwasher and wash them when it's full
+U: allright, that sounds good
+{'object': 'plates', 'location': 'dining table', 'destination': 'dish washer', 'action': 'wash', 'cleanliness':'dirty'}
+Was semantic extraction successful?","Given this conversation history, is it correct to think that the user might be tired, fatigued or simply lazy?",N/A,str,yes,yes,N/A
+cleaning_leftovers,evaluation_of_conversation,2,"U: Hey, this pot is still greasy even though I just cleaned it
+R: How did you clean it? did you scrub it with soap and water?
+U: I rinsed it with water and then dried it with papers
+R: You should wash it with soap and a sponge this time
+U: ok, grab the soap from the storage room closet then
+{'object': 'soap', 'location': 'sink', 'room':'kitchen'}
+Was semantic extraction successful?","Given this conversation history, should the user check the dishes they cleaned prior to this one pot to confirm they were properly cleaned?",N/A,str,"no  {'object': 'soap', 'location': 'closet', 'room':'storage room'}",yes,N/A
+cleaning_leftovers,evaluation_of_conversation,2,"U: Oh no, the kids dropped some food on the floor near the stove
+R: What did they drop? was it something solid like pasta and pancakes or did it contain liquids like a sauce?
+U: It was pasta without any sauce
+R: then I'll get the dust pan and a brush from the closet
+U:great
+{'object': 'dustpan and brush', 'location': 'closet'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the kids were being served food whilst the accident occured?",N/A,str,yes,yes,N/A
+cleaning_leftovers,evaluation_of_conversation,2,"U: Hey the backsplash is looking awful, there's food residue all over the place
+R: I would suggest it is time to clean it
+U: Yeah, I'll grab the cleaning spray, can you get me the..the..what's it called..
+R: The sponge perhaps?
+U: yeah, should be a clean one in the sink
+{'object': 'sponge', 'location': 'sink'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user rarely cooks in their household",N/A,str,yes,yes,N/A
+cleaning_leftovers,evaluation_of_conversation,2,"U: Hey, um, there's a small puddle of water on the floor
+R: where is it exactly?
+U: It is near the freezer, can you grab me the mop in the storage room?
+R: Got it, in the meantime, check that the freezer door is closed
+U: Gotcha
+{'object': 'mop', 'room': 'storage room'} 
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the water on the floor was caused by the open freezer?",N/A,str,yes,yes,N/A
+cleaning_leftovers,evaluation_of_conversation,2,"U: I've noticed a lot of flies and ants inside the house these days...
+R: Are they gathering around any particular places?
+U: Yes, around the cabinet in the kitchen
+R: You should look for any spoiled food in there
+{'object': 'spoiled food', 'location': 'cabinet'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the flies and ants are gathering because they want to settle down in the cabin?",N/A,str,yes,no,N/A
+cleaning_leftovers,evaluation_of_conversation,2,"U: hey, i have to reheat my food
+R: should I put it back into the oven?
+U: No, I'll put it into the microwave for two minutes but could you grab me a napkin from the kitchen counter?
+R: sure thing
+{'object': 'food', 'location': 'microwave', 'room':'kitchen', 'task': 'reheat'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user is eating a Caesar salad?",N/A,str,"no {'object': 'napkin', 'location': 'counter', 'room':'kitchen'}",no,N/A
+cleaning_leftovers,evaluation_of_conversation,2,"U: Hey there might be something wrong with the automatic soap dispenser
+R: What makes you believe that?
+U: Well, it is making a motorized sound but no soap is coming out
+R: It sounds like the dispenser is out of soap then 
+{'object': 'soap bar', 'location': 'under sink'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the dispenser is broken?",N/A,str,"no   {'object': 'soap', 'location': 'under sink'}",no,N/A
+cleaning_leftovers,evaluation_of_conversation,2,"U: Ehhhh, this mess on the floor, if I were to leave it, might it magically dissappear?
+R: Will anyone other than you be present any time soon?
+U: Nope, I live alone and won't have guests over in the foreseeable future
+R: Then it is highly improbable that it will clean itself up
+U: feth me the robot vacuumcleaner, it is by the sofa. I won't be able to clean it up because of my back pain
+{'object': 'dustpan', 'location': 'storage'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user cannot bend down?",N/A,str,"no {'object': 'robot vacuum cleaner', 'location': 'next to sofa'}
+no {'object': 'robot vacuum cleaner', 'location': 'by the sofa'}",yes,N/A
+cleaning_leftovers,evaluation_of_conversation,2,"U:  So we finished eating and there are lots of leftovers, seems like waste to throw away everything
+R: You could store it in the fridge for another day
+U: I don't have that much space in my fridge for all these plates. But I think I could fit everything into three lunch boxes
+R: allright, I'll get those from the cabin
+U: thank you
+{'object': 'lunch box', 'location': 'cabinet', 'material' : 'plastic'}
+Was semantic extraction successful?","Given this conversation history, is it correct to assume that the user doesn't need to buy food for three days?",N/A,str,yes,yes,N/A
